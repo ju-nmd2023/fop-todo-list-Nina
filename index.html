@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="todo.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Input Field</title>
+<link rel="stylesheet" href="main.css">
 </head>
 <header>To Do List</header>
+
 <body>
-    <input type="text" id="inputField">
-    <button id="submitButton"></button>
-    <div id="displayArea"></div>
+
+    <div class="submit">
+    <input type="text" id="inputField" placeholder="Enter task">
+    <button id="submitButton">Submit</button>
+    </div>
+
+    <div class="gridlist">
+    <ul id="listContainer"></ul>
+    <script src="todo.js"></script>
+    </div>
+
 </body>
+
 </html>

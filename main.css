@@ -1,0 +1,52 @@
+header{
+    color: antiquewhite;
+    border: 4;
+    border-color: darkslategray;
+    font-size: 70px;
+    text-align: center;
+    place-items: center;
+}
+
+body {
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding-top: 150px;
+    place-items: center;
+    font-size: large;
+}
+
+.submit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#inputField{
+    background-color: antiquewhite;
+    color: darkslategray;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+    height: 30px;
+    width: 150px;
+}
+
+#submitButton{
+    border: none;
+    border-radius: 5px;
+    color: beige;
+    background-color: darkslategrey;
+    font-size: large;
+    width: 70px;
+    height: 37px;
+}
+
+.x-icon::before {
+    content: "❌";
+}
+
+.checkmark::before {
+    content: "✓";
+}
