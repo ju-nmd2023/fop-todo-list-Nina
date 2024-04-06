@@ -1,18 +1,16 @@
 header{
     color: antiquewhite;
-    border: 4;
-    border-color: darkslategray;
-    font-size: 70px;
-    text-align: center;
-    place-items: center;
+    font-size: 50px;
+}
+
+h1{
+    margin:0%;
 }
 
 body {
     background-color: cadetblue;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0;
-    padding-top: 150px;
     place-items: center;
     font-size: large;
 }
@@ -44,14 +42,7 @@ body {
 }
 
 ul{
-    color: antiquewhite;
+    color: darkslategray;
     font-size: large;
-}
-
-.x-icon::before {
-    content: "❌";
-}
-
-.checkmark::before {
-    content: "✓";
+    list-style: none;
 }
