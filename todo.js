@@ -1,3 +1,5 @@
+//I tried to follow the video but it didn't work for some reason so we struggled alot for like 3 days with this code then a friends Veronica and Mercy finally figured it out and helped explain it to me
+
 let inputField = document.getElementById("inputField");
 let submitButton = document.getElementById("submitButton");
 let listContainer = document.getElementById("listContainer");
@@ -32,7 +34,8 @@ function renderList() {
       listItem.style.textDecoration = "line-through";
     }
     let strikeButton = document.createElement("button");
-    strikeButton.className = "strikeButton";
+    strikeButton.textContent = "strike";
+    strikeButton.className = "listbuttons";
     strikeButton.addEventListener("click", function () {
       todoList[index].strike = !todoList[index].strike; // Toggle task completion status
       renderList(); // Update the UI
@@ -40,7 +43,8 @@ function renderList() {
     });
 
     let removeButton = document.createElement("button"); // Create remove button
-    removeButton.className = "removeButton";
+    removeButton.textContent = "remove";
+    removeButton.className = "listbuttons";
     removeButton.addEventListener("click", function () {
       todoList.splice(index, 1); // Remove item from array
       renderList(); // Update the UI

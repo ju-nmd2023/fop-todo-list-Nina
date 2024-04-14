@@ -8,6 +8,7 @@ h1{
 }
 
 body {
+    font-family: 'Times New Roman', Times, serif;
     background-color: cadetblue;
     display: grid;
     grid-template-columns: 1fr;
@@ -22,6 +23,7 @@ body {
 }
 
 #inputField{
+    font-family: 'Times New Roman', Times, serif;
     background-color: antiquewhite;
     color: darkslategray;
     border-radius: 5px;
@@ -32,6 +34,7 @@ body {
 }
 
 #submitButton{
+    font-family: 'Times New Roman', Times, serif;
     border: none;
     border-radius: 5px;
     color: beige;
@@ -42,7 +45,19 @@ body {
 }
 
 ul{
+    margin-top: 10px;
     color: darkslategray;
     font-size: large;
     list-style: none;
+}
+
+.listbuttons {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 5px;
+    margin-left: 5px;
+    background-color: darkslategrey;
+    color: antiquewhite;
+    border: none;
+    border-radius: 4px;
 }
