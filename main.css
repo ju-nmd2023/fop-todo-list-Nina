@@ -52,8 +52,6 @@ ul{
 }
 
 .listbuttons {
-    display: flex;
-    align-self: flex-end;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     margin: 5px;
