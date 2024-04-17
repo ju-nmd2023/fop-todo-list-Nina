@@ -1,4 +1,4 @@
-//I tried to follow the video but it didn't work for some reason so we struggled alot for like 3 days with this code then a friends Veronica and Mercy finally figured it out and helped explain it to me
+//I tried to follow the video but it didn't work for some reason so we struggled alot for like 3 days with this code then a friends Veronica and Mercy finally figured it out and helped explain what was wrong with mine to me
 
 let inputField = document.getElementById("inputField");
 let submitButton = document.getElementById("submitButton");
@@ -8,7 +8,7 @@ let listContainer = document.getElementById("listContainer");
 let todoList = []; 
 
 window.addEventListener("load", function () {
-  let storedData = localStorage.getItem("todoList");
+  let storedData = localStorage.getItem("todoList");//retrieves data stored in json
   if (storedData) {
     todoList = JSON.parse(storedData); // Load stored list items into the array
     renderList(); // Display the loaded list items
@@ -16,7 +16,7 @@ window.addEventListener("load", function () {
 });
 
 submitButton.addEventListener("click", function () {
-  let inputData = inputField.value.trim();
+  let inputData = inputField.value.trim(); //retrievs items added into inputField and assigns it to inputData Variable, .trim() removes any leading or trailing whitespace from the input.
   if (inputData !== "") {
     todoList.push({ task: inputData, strike: false }); // Add new task to the array
     renderList(); // Display the updated list
